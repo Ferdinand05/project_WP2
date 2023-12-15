@@ -42,7 +42,7 @@ Mahasiswa
                 <td><?= $row['alamat']  ?></td>
                 <td><?= $row['telepon']; ?></td>
                 <td>
-                    <a href="" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                    <a href="/mahasiswa/editMahasiswa/<?= base64_encode($row['nim']); ?>" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
                     <a href="/mahasiswa/dropMahasiswa/<?= base64_encode($row['nim']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda Yakin ?')"><i class="fa fa-trash-alt"></i></a>
                 </td>
             </tr>

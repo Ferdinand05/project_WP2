@@ -14,12 +14,11 @@ Form Matakuliah
     <?= csrf_field(); ?>
     <div class="form-group">
         <label for="kode_matkul">Kode</label>
-
-        <input type="text" name="kode_matkul" id="kode_matkul" class="form-control" placeholder="Kode Matakuliah..." required>
+        <input type="text" name="kode_matkul" id="kode_matkul" class="form-control" placeholder="Kode Matakuliah..." required value="<?= old('kode_matkul'); ?>">
     </div>
     <div class="form-group">
         <label for="nama_matkul">Matakuliah</label>
-        <input type="text" name="nama_matkul" id="nama_matkul" class="form-control" placeholder="Nama Matakuliah..." required>
+        <input type="text" name="nama_matkul" id="nama_matkul" class="form-control" placeholder="Nama Matakuliah..." required value="<?= old('nama_matkul'); ?>">
     </div>
     <div class="form-group">
         <label for="dosen_matkul">Dosen</label>

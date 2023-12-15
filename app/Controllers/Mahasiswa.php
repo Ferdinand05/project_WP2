@@ -55,7 +55,7 @@ class Mahasiswa extends BaseController
         $validation->setRules([
             'nim' => [
                 'label' => 'Nomor Induk Mahasiswa',
-                'rules' => 'required|is_unique[mahasiswa.nim]'
+                'rules' => 'required|is_unique[mahasiswa.nim]|max_length[10]'
             ],
             'nama' => [
                 'label' => 'Nama Mahasiswa',
@@ -67,7 +67,7 @@ class Mahasiswa extends BaseController
             ],
             'telepon' => [
                 'label' => 'No Telepon Mahasiswa',
-                'rules' => 'required|numeric'
+                'rules' => 'required|numeric|max_length[13]'
             ]
         ]);
 
@@ -97,5 +97,66 @@ class Mahasiswa extends BaseController
         session()->setFlashdata('success', 'Data berhasil Dihapus!');
 
         return redirect()->back()->withInput();
+    }
+
+    public function editMahasiswa($nim)
+    {
+
+        $nim = base64_decode($nim);
+        $mahasiswa = $this->tableMahasiswa->find($nim);
+        $data = [
+            'title' => 'Form Mahasiswa',
+            'mahasiswa' => $mahasiswa
+        ];
+
+        return view('mahasiswa/editMahasiswa', $data);
+    }
+
+    public function updateMahasiswa()
+    {
+        $nim = $this->request->getPost('nim');
+        $nama = $this->request->getPost('nama');
+        $alamat = $this->request->getPost('alamat');
+        $telepon = $this->request->getPost('telepon');
+        $data = [
+            'nim' => $nim,
+            'nama' => $nama,
+            'alamat' => $alamat,
+            'telepon' => $telepon
+        ];
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'nim' => [
+                'label' => 'Nomor Induk Mahasiswa',
+                'rules' => 'is_unique[mahasiswa.nim,nim,' . $nim  . ']'
+            ],
+            'nama' => [
+                'label' => 'Nama Mahasiswa',
+                'rules' => 'required|string'
+            ],
+            'alamat' => [
+                'label' => 'Alamat Mahasiswa',
+                'rules' => 'required|string'
+            ],
+            'telepon' => [
+                'label' => 'No Telepon Mahasiswa',
+                'rules' => 'required|numeric|max_length[13]'
+            ]
+        ]);
+
+        if (!$validation->run($data)) {
+            session()->setFlashdata('error', $validation->listErrors('list'));
+            return redirect()->back()->withInput();
+        } else {
+
+            $this->tableMahasiswa->update($nim, [
+                'nama' => $nama,
+                'alamat' => $alamat,
+                'telepon' => $telepon
+            ]);
+
+            session()->setFlashdata('success', 'Data Berhasil DIUPDATE!');
+            return redirect()->to(site_url('mahasiswa'))->withInput();
+        }
     }
 }

@@ -18,11 +18,11 @@ Form Mahasiswa
 <?= form_open('/mahasiswa/addMahasiswa'); ?>
 <div class="form-group">
     <label for="nim">NIM</label>
-    <input type="text" name="nim" id="nim" class="form-control" placeholder="Nomor Induk Mahasiswa..." required>
+    <input type="text" name="nim" id="nim" class="form-control" placeholder="Nomor Induk Mahasiswa..." required value="<?= old('nim'); ?>">
 </div>
 <div class="form-group">
     <label for="nama">Nama</label>
-    <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Mahasiswa..." required>
+    <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Mahasiswa..." required value="<?= old('nama'); ?>">
 </div>
 <div class="form-group">
     <label for="alamat">Alamat</label>

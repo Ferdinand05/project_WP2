@@ -39,7 +39,7 @@ Matakuliah
                 <td><?= $row['nama_matkul']; ?></td>
                 <td><?= $row['dosen_matkul']; ?></td>
                 <td>
-                    <a href="" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                    <a href="/matakuliah/editmatakuliah/<?= base64_encode($row['kode_matkul']); ?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
                     <a href="/matakuliah/deletematkul/<?= base64_encode($row['kode_matkul']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda Yakin ?')"><i class="fa fa-trash-alt"></i></a>
                 </td>
             </tr>
