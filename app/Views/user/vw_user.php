@@ -8,6 +8,9 @@ User
 
 <?= $this->section('card-header'); ?>
 Profile
+<div class="float-right">
+    <a href="/user/list" class="btn btn-primary btn-sm"><i class="far fa-user"></i> Daftar User</a>
+</div>
 <?= $this->endSection(); ?>
 
 <?= $this->section('content'); ?>

@@ -26,4 +26,17 @@ class User extends BaseController
 
         return view('user/vw_user', $data);
     }
+
+    public function list()
+    {
+
+
+
+        $data = [
+            'title' => 'Daftar User',
+            'user' => $this->tableUsers->findAll()
+        ];
+
+        return view('user/list', $data);
+    }
 }

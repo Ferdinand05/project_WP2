@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\ModelMahasiswa;
 use App\Models\ModelMatakuliah;
 use App\Models\ModelNilai;
+use PhpParser\Node\Stmt\Return_;
 
 class Nilai extends BaseController
 {
@@ -102,5 +103,30 @@ class Nilai extends BaseController
             session()->setFlashdata('success', 'Data Nilai Berhasil Ditambahkan');
             return redirect()->to(base_url('nilai'))->withInput();
         }
+    }
+
+    public function deleteNilai($id_nilai)
+    {
+        $id_nilai = base64_decode($id_nilai);
+
+        $this->tableNilai->delete($id_nilai);
+        session()->setFlashdata('success', 'Data Nilai Berhasil DIHAPUS!');
+
+        return redirect()->back()->withInput();
+    }
+
+    public function detailNilai($id_nilai)
+    {
+        $id_nilai = base64_decode($id_nilai);
+
+        $dataJoin = $this->tableNilai->builder('nilai n')->join('mahasiswa m', 'n.nim_mahasiswa=m.nim')
+            ->join('matakuliah mt', 'n.id_matkul=mt.kode_matkul')->where('n.id_nilai', $id_nilai)->get()->getRowArray();
+
+        $data = [
+            'title' => 'Detail Nilai',
+            'data' => $dataJoin
+        ];
+
+        return view('nilai/vw_detail', $data);
     }
 }

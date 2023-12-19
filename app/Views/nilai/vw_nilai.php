@@ -51,9 +51,9 @@ Nilai
                 <td><?= $row['nilai_uas']; ?></td>
                 <td><?= $row['rata_rata']; ?></td>
                 <td>
-                    <a href="" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
+                    <a href="/nilai/detailNilai/<?= base64_encode($row['id_nilai']); ?>" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
                     <a href="" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                    <a href="" class="btn btn-danger btn-sm"><i class="fa fa-trash-alt"></i></a>
+                    <a href="/nilai/deleteNilai/<?= base64_encode($row['id_nilai']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah yakin ingin Menghapus?')"><i class="fa fa-trash-alt"></i></a>
                 </td>
             </tr>
         <?php endforeach; ?>
