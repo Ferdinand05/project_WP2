@@ -59,4 +59,10 @@ Nilai
         <?php endforeach; ?>
     </tbody>
 </table>
+<div class="mt-2">
+    <small>Nilai Tertinggi : </small>
+    <div class="badge badge-primary"><?= $nilai_tertinggi; ?></div><br>
+    <small>Nilai Terkecil : </small>
+    <div class="badge badge-danger"><?= $nilai_terkecil; ?></div>
+</div>
 <?= $this->endSection(); ?>

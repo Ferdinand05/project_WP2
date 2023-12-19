@@ -1,0 +1,486 @@
+CRITICAL - 2023-12-07 05:52:09 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:model/ModelMahasiswa')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:52:09 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:model/Mode...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 05:52:14 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:model/ModelNilai')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:52:14 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:model/Mode...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 05:53:07 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:model/ModelMatakuliah')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:53:07 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:model/Mode...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 05:53:22 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:controller/Dashboard')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:53:22 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:controller...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 05:53:28 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:controller/Nilai')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:53:28 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:controller...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 05:53:36 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:controller/Mahasiswa')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:53:36 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:controller...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 05:53:43 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:controller/Matakuliah')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:53:43 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'make:controller...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 05:54:02 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:54:02 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 05:54:20 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-07 05:54:20 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\laragon\www\project-wp2\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

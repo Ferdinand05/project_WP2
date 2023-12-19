@@ -1,0 +1,94 @@
+INFO - 2023-12-18 03:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 03:04:20 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 415.
+ 1 SYSTEMPATH\Debug\Toolbar.php(415): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-18 03:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 03:04:22 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 415.
+ 1 SYSTEMPATH\Debug\Toolbar.php(415): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('login', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-18 03:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 03:04:26 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 415.
+ 1 SYSTEMPATH\Debug\Toolbar.php(415): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('login', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-18 03:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 03:04:31 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH\Debug\Toolbar.php on line 415.
+ 1 SYSTEMPATH\Debug\Toolbar.php(415): strpos(null, '<head>')
+ 2 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 3 SYSTEMPATH\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('login', 'after')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-18 03:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 05:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 05:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 05:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 05:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 05:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 05:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 05:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 05:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

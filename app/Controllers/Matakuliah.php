@@ -14,6 +14,7 @@ class Matakuliah extends BaseController
     }
     public function index()
     {
+
         $data = [
             'title' => 'Matakuliah',
             'matakuliah' => $this->tableMatakuliah->findAll()

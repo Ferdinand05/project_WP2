@@ -1,0 +1,560 @@
+INFO - 2023-12-19 02:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:06:10 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:06:10 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:06:18 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:06:18 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:55:38 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:55:38 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:56:24 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:56:24 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:56:56 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:56:56 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:57:17 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:57:17 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:58:09 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:58:09 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:58:19 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:58:19 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 02:58:20 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 02:58:20 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 02:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 02:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 03:01:45 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '=' in C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\project-wp2\app\Controllers\User.php(19): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index('\x96+-')
+#7 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\project-wp2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\project-wp2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-19 03:01:45 --> Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb3_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:', [...], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\User.php(19): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index('–+-')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 03:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 03:23:03 --> syntax error, unexpected token ";", expecting identifier or variable or "{" or "$"
+in APPPATH\Views\nilai\vw_detail.php on line 1.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('nilai/vw_detail', [], true)
+ 3 APPPATH\Controllers\Nilai.php(130): view('nilai/vw_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Nilai->detailNilai('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 03:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 03:29:04 --> syntax error, unexpected token ";", expecting variable or "{" or "$"
+in APPPATH\Views\nilai\vw_detail.php on line 13.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('nilai/vw_detail', [], true)
+ 3 APPPATH\Controllers\Nilai.php(130): view('nilai/vw_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Nilai->detailNilai('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 03:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 03:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 12:15:40 --> Undefined property: App\Controllers\Nilai::$tableMatakuliah
+in APPPATH\Controllers\Nilai.php on line 21.
+ 1 APPPATH\Controllers\Nilai.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Nilai::$tableMatakuliah', 'C:\\laragon\\www\\project-wp2\\app\\Controllers\\Nilai.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Nilai->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 12:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 12:18:06 --> Array to string conversion
+in APPPATH\Views\nilai\vw_nilai.php on line 63.
+ 1 APPPATH\Views\nilai\vw_nilai.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\project-wp2\\app\\Views\\nilai\\vw_nilai.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\project-wp2\\app\\Views\\nilai\\vw_nilai.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('nilai/vw_nilai', [], true)
+ 5 APPPATH\Controllers\Nilai.php(33): view('nilai/vw_nilai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Nilai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 12:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 12:18:42 --> Array to string conversion
+in APPPATH\Views\nilai\vw_nilai.php on line 63.
+ 1 APPPATH\Views\nilai\vw_nilai.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\project-wp2\\app\\Views\\nilai\\vw_nilai.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\project-wp2\\app\\Views\\nilai\\vw_nilai.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('nilai/vw_nilai', [], true)
+ 5 APPPATH\Controllers\Nilai.php(33): view('nilai/vw_nilai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Nilai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\project-wp2\\public\\index.php')
+INFO - 2023-12-19 12:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

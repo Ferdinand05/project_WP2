@@ -18,12 +18,18 @@ class Nilai extends BaseController
     public function index()
     {
 
+        $nilaiTertinggi = $this->tableNilai->builder('nilai')->selectMax('rata_rata', 'nilai_tertinggi')
+            ->get()->getResultArray();
+        $nilaiTerkecil = $this->tableNilai->builder('nilai')->selectMin('rata_rata', 'nilai_terkecil')
+            ->get()->getResultArray();
         $dataNilai = $this->tableNilai->builder('nilai n')->join('mahasiswa m', 'm.nim=n.nim_mahasiswa')
             ->join('matakuliah mt', 'mt.kode_matkul=n.id_matkul')->get()->getResultArray();
 
         $data = [
             'title' => 'Nilai',
-            'nilai' => $dataNilai
+            'nilai' => $dataNilai,
+            'nilai_tertinggi' => $nilaiTertinggi[0]['nilai_tertinggi'],
+            'nilai_terkecil' => $nilaiTerkecil[0]['nilai_terkecil']
         ];
 
         return view('nilai/vw_nilai', $data);
